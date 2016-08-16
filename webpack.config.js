@@ -35,7 +35,7 @@ module.exports = {
                 exclude: /index\.html/
             },
             {
-                test: /\.(eot|woff|woff2|ttf|svg|png|jpg)$/,
+                test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
                 loader: 'url-loader?limit=30000&name=fonts/[name]-[hash].[ext]'
             }
         ],
